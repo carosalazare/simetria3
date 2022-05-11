@@ -1,0 +1,49 @@
+.eltodo{
+    margin: 110px;
+}
+
+#forma{
+    margin-left: 0px;
+    margin-top: 11px;
+    width: 467px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #FF9EB0;
+    border-style: solid;
+    
+}
+
+#elboton
+{
+    border:none;
+    background-color: #E8505B;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px 70px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#mensaje{
+    margin-left: 0px;
+    margin-top: 11px;
+    width: 467px;
+    height: 40px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #FF9EB0;
+    border-style: solid;
+    height: 180px;
+}
+
+#lafoto{
+    height: 489px;
+}
+
+
+.fields{
+    align-content:space-around;
+}

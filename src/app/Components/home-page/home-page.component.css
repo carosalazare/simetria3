@@ -1,0 +1,27 @@
+.aboutus
+{
+    background-color: #ffffff;
+    margin: 100px 0;
+}
+
+#aboutimg
+{
+    height: 350px;
+}
+
+.segundaparte{
+    background-color: #272727;
+}
+
+.segunda{
+   padding: 230px 0;
+   margin-bottom: 0;
+}
+
+.header{
+    padding-top: 60px;
+}
+
+.carousel{
+    padding-top: 0;
+}

@@ -1,0 +1,28 @@
+.header
+{
+    background-color: #242424;
+    margin: 0;
+    
+}
+
+
+#logo
+{
+    margin-top: 8px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+.lista-lonks
+{
+    margin: 0;
+}
+
+.lonks{
+    margin-top: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#icons{
+    height: 23px;
+}
