@@ -1,0 +1,66 @@
+.header
+{
+    background-color: #242424;
+    margin: 0;
+    
+}
+
+
+#logo
+{
+    margin-top: 8px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+.lista-lonks
+{
+    margin: 0;
+}
+
+.lonks{
+    margin-top: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    
+    background-image: linear-gradient(
+      to right,
+      #e2b708,
+      #e2b708 50%,
+      #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:before {
+    content: '';
+    background: #e2b708;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover {
+   background-position: 0;
+  }
+  
+  a:hover::before {
+    width:100%;
+  }
+
+#icons{
+    height: 23px;
+}
