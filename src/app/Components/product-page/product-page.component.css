@@ -43,8 +43,8 @@
 }
 
 .tabs .indicator {
-    color:#FFDA56 !important;
-    background-color:#FFDA56 !important;
+    /*color:#FFDA56 !important;*/
+    background-color: transparent !important; /*no pude lograr que cambie alav*/
   }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
@@ -128,7 +128,7 @@ h6 {
 
 p {
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 11pt;
 
     margin: 0;
 }
