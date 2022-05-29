@@ -1,0 +1,134 @@
+.test {
+    border-color: magenta;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+}
+
+.col {
+    padding: 0;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Correcciones a elementos de materialize */
+
+.breadcrumb {
+    font-family: 'Roboto';
+    color: #8E8E8E;
+    font-size: 11pt;
+    height: 28px;
+}
+
+.tabs {
+    height: 140px;
+    margin: 0;
+}
+
+.tab {
+    height: 140px;
+    width: 100px;
+}
+
+.tabs img {
+    height: 140px;
+    width: auto;
+}
+
+.tab a {
+    padding: 0;
+}
+
+.tabs .indicator {
+    color:#FFDA56 !important;
+    background-color:#FFDA56 !important;
+  }
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: transparent;
+}
+
+/* Otros elementos */
+
+.btn-large {
+    background-color: #64ABFF;
+    border-radius: 10px;
+
+    text-transform: none;
+    color: white;
+    font-size: 10;
+
+    padding: 0px 120px 0px 120px
+}
+
+/* Márgenes */
+.breadcrumb {
+    margin: 45px 15px 15px 15px;
+}
+
+.tabs {
+    margin: 25px 15px 15px 15px;
+}
+
+#product-description div{
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+
+/* Textos */
+div {
+    font-family: Roboto;
+    color: #3E3F42;
+}
+
+strong {
+    color: #E8505B
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 20pt;
+    color: #8E8E8E;
+
+    margin: 0 0 10px 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18pt;
+
+    margin: 0 0 10px 0;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 16pt;
+
+    margin: 0 0 10px 0;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 13pt;
+
+    margin: 0 0 10px 0;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 10pt;
+    color: #8E8E8E;
+
+    margin: 0 0 10px 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12pt;
+
+    margin: 0;
+}
