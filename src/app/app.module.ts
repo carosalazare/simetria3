@@ -10,6 +10,8 @@ import { ArtistsComponent } from './Components/artists/artists.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { ProductPageComponent } from './Components/product-page/product-page.component';
+import { CartComponent } from './Components/cart/cart.component';
+import { CartItemComponent } from './Components/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProductPageComponent } from './Components/product-page/product-page.com
     ArtistsComponent,
     AboutUsComponent,
     ContactComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    CartComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,
