@@ -18,13 +18,6 @@ export class ProductPageComponent implements OnInit {
       var instance = M.Tabs.init(el, {
         swipeable: true,
       });
-      
-      var elems = document.querySelectorAll('.carousel');
-      var instances = M.Carousel.init(elems, {
-        indicators: false,
-        fullWidth: false,
-        dist: 0
-      });
     });
   }  
 
