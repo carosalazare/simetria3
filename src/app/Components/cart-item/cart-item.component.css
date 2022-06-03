@@ -1,0 +1,110 @@
+.test {
+    border-color: magenta;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+}
+
+.col {
+    padding: 0;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Correcciones a elementos de materialize */
+
+.divider {
+    height: 2px;
+    background-color: #FF9EB0;
+}
+
+.btn-floating {
+    border-radius: 8px;
+    background-color: #ECECEC;
+}
+
+.btn-floating i{
+    color: #3E3F42;
+}
+
+input[type=number] {
+    font-family: Roboto;
+    font-size: 11pt;
+    background-color: #ECECEC;
+    border-bottom: none;
+    border-radius: 8px;
+    
+    padding: 0 0 0 8px;
+    
+}
+
+/* Otros elementos */
+
+#product-info {
+    padding-left: 30px;
+}
+
+/* Márgenes */
+
+#cart-item {
+    margin-top: 35px;
+}
+
+.divider {
+    margin: 10px 0 10px 0;
+}
+
+.extra-top {
+    margin-top: 30px;
+}
+
+
+/* Textos */
+div {
+    font-family: Roboto;
+    color: #3E3F42;
+}
+
+strong {
+    font-weight: 400;
+    color: #8E8E8E;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18pt;
+
+    margin: 0 0 10px 0;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 16pt;
+
+    margin: 0 0 10px 0;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 13pt;
+
+    margin: 0 0 10px 0;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 10pt;
+    color: #8E8E8E;
+
+    margin: 0 0 10px 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 11pt;
+
+    margin: 0;
+}
