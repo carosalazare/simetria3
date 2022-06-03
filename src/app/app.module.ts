@@ -14,6 +14,7 @@ import { CartComponent } from './Components/cart/cart.component';
 import { CartItemComponent } from './Components/cart-item/cart-item.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ProductListComponent } from './Components/product-list/product-list.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
