@@ -1,0 +1,52 @@
+ .btn{
+     box-shadow: none;
+     padding: 0px;
+     font-family: 'Roboto', sans-serf;
+     background-color: white;
+     color: black;
+     border-color: black !important;
+     border-style: solid;
+     border-width: 2px;
+ }
+
+ .btn:hover{
+    background-color:  #f5f5f0;
+    box-shadow: none;
+ }
+
+ option{
+     box-shadow: none;
+     background-color: white;
+     cursor: pointer !important;
+     font-family: 'Roboto', sans-serf;
+ }
+
+ option:hover{
+    background-color:  #f5f5f0;
+    box-shadow: none !important;
+ }
+
+ .waves-effect{
+     box-shadow: none !important;
+     cursor: pointer !important;
+ }
+
+ select{
+    box-shadow: none !important;
+    cursor: pointer !important;
+ }
+
+ .prueba{
+    display: flex;
+    justify-content: space-between;
+ }
+
+a{
+    color: #a3a397;
+}
+
+a:hover{
+    color: grey;
+}
+
+ 

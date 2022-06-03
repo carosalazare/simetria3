@@ -12,6 +12,9 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { ProductPageComponent } from './Components/product-page/product-page.component';
 import { CartComponent } from './Components/cart/cart.component';
 import { CartItemComponent } from './Components/cart-item/cart-item.component';
+import { ProductComponent } from './Components/product/product.component';
+import { ProductListComponent } from './Components/product-list/product-list.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { CartItemComponent } from './Components/cart-item/cart-item.component';
     ContactComponent,
     ProductPageComponent,
     CartComponent,
-    CartItemComponent
+    CartItemComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
