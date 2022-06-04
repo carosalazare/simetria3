@@ -1,7 +1,17 @@
+.test {
+    border-color: magenta;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+}
+
+#top {
+    padding: 0 40px 0 40px;
+    margin-bottom: 40px;
+}
+
 .card{
     box-shadow: none;
-    border: solid !important;
-    border-color: blueviolet !important;
 }
 
 .card-title{
@@ -10,14 +20,15 @@
     font-family: 'Roboto', sans-serf !important; 
     font-weight: 700 !important;
     line-height: 18px !important;
-    border: solid !important;
-    border-color: blueviolet !important;
+}
+
+.card-image {
+    height: 15vw;
+    overflow: hidden;
 }
 
 .card-content{
     text-align: center;
-    border: solid !important;
-    border-color: blueviolet !important;
 }
 
 p{
