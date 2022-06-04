@@ -3,42 +3,34 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet"/>
 
 
-  <script>
+<script>
     $(document).ready(function() {
  	$('select').material_select();
 });
 </script>
 
-
-<div class="row">
-
-    <div class="col l8 push-l2" style="border: solid;">
-        <p style="margin: 50px 0px -10px 10px; color: #a3a397;"><a href="#">Home</a> > <a href="#">Products</a></p> <!---Poner rutas--> <!---modificar-->
-
-        <div class="prueba">
-            <h1 style="font-family: 'Roboto', sans-serf; font-weight: 500; font-size: 30px; margin-top: 15px; margin-left: 10px;">Product Category</h1>
-
-                 <!---DROPDOWN-->
-                 <div class="container col push-l2" style="width: 125px; margin-right: 18%;">  
-                    <div class="row">
-                      <div class="input-field s6">      
-                        <select class="browser-default waves-effect waves-light btn">
-                            <option value="" disabled="" selected="">Filter by</option>
-                            <option value="1">Clothes</option>
-                            <option value="2">Accesories</option>
-                            <option value="3">Prints</option>
-                            <option value="4">All</option>
-                         </select>
-                      </div>
-                    </div>
-                  </div>
-        </div>
-
-        <app-product *ngFor="let product of productService.products" [data]= "product"></app-product>
-        
-
-
-    </div>
+<!-- Top menu -->
+<div class="row" id="top">
+    <div class="col m8 push-m1">
+        <p class="col s12"><a href="#">Home</a> > <a href="#">Products</a></p> <!---Poner rutas--> <!---modificar-->
+        <h1 class="col s12">Product Category</h1>
+      </div>
+      <!---DROPDOWN-->
+      <div class="col m2 pull-m1 right right-align valign-wrapper">      
+        <h5 class="col m5">Sort by: </h5>
+        <select class="col m7 browser-default waves-effect waves-light btn">
+          <option value="" disabled="" selected=""></option>
+          <option value="1">Clothes</option>
+          <option value="2">Accesories</option>
+          <option value="3">Prints</option>
+          <option value="4">All</option>
+        </select>
+      </div>
 </div>
 
-<br> <br> <br> <br> <br>
+<!-- Product list -->
+<div class="row">
+  <div class="col m10 push-m1">
+    <app-product *ngFor="let product of productService.products" [data]= "product"></app-product>
+  </div>
+</div>  
