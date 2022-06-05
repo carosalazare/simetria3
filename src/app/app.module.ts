@@ -20,6 +20,8 @@ import { ProductPageTemplateComponent } from './Components/product-page-template
 import { ArtistaPageComponent } from './Components/artistapage/artistapage.component';
 import { ArtistaProductosComponent } from './Components/artistaproductos/artistaproductos.component';
 import { ProductoartComponent } from './Components/Component/productoart/productoart.component';
+import { ConstructionComponent } from './Components/construction/construction.component';
+
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -42,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductPageTemplateComponent,
     ArtistaPageComponent,
     ArtistaProductosComponent,
-    ProductoartComponent
+    ProductoartComponent,
+    ConstructionComponent
   ],
   imports: [
     BrowserModule,
