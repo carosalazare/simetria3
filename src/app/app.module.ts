@@ -17,9 +17,9 @@ import { CartItemComponent } from './Components/cart-item/cart-item.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
 import { ProductPageTemplateComponent } from './Components/product-page-template/product-page-template.component';
-import { ArtistaPageComponent } from './artistapage/artistapage.component';
-import { ArtistaProductosComponent } from './artistaproductos/artistaproductos.component';
-import { ProductoartComponent } from './Component/productoart/productoart.component';
+import { ArtistaPageComponent } from './Components/artistapage/artistapage.component';
+import { ArtistaProductosComponent } from './Components/artistaproductos/artistaproductos.component';
+import { ProductoartComponent } from './Components/Component/productoart/productoart.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
