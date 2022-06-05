@@ -14,17 +14,12 @@
             </div>
 
             <div> <!-- Items -->
-                <app-cart-item></app-cart-item>
-                <app-cart-item></app-cart-item>
-                <app-cart-item></app-cart-item>
-                <app-cart-item></app-cart-item>
-                <app-cart-item></app-cart-item>
-                <app-cart-item></app-cart-item>
+                <app-cart-item *ngFor="let product of productService.getCart()" [product]="product"></app-cart-item>
             </div>
             
             <div id="cart-foot"> <!-- Foot -->
                 <div class="divider"></div>
-                <h4 class="right-align extra-top"><b>Cart total: $110.00</b></h4>
+                <h4 class="right-align extra-top"><b>Cart total: ${{this.getCartTotal()}}.00</b></h4>
             </div>
         </div>
     </div>
@@ -37,18 +32,20 @@
                 <div class="divider"></div>
                 <div class="extra-top">    
                     <h5 class="col m6"><b>Sub total</b></h5>
-                    <h5 class="col m6 right-align">$110.00</h5>
+                    <h5 class="col m6 right-align">${{this.getCartTotal()}}.00</h5>
                     <h5 class="col m6"><b>Shipping</b></h5>
-                    <h5 class="col m6 right-align">$5.00</h5>
+                    <h5 class="col m6 right-align">${{this.getShipping()}}</h5>
+                    <h5 class="col m6"><b>Taxes</b></h5>
+                    <h5 class="col m6 right-align">${{this.getTaxes()}}</h5>
                 </div>
             </div>
 
             <div id="checkout-foot"> <!-- Foot -->
                 <h4 class="col m6"><b>Grand total:</b></h4>
-                <h4 class="col m6 right-align"><b>$5.00</b></h4>
+                <h4 class="col m6 right-align"><b>${{this.getGrandTotal()}}</b></h4>
                 <div class="col s12 divider"></div>
                 <div class="center-align">
-                    <a class="col s12 waves-effect waves-light btn-large valign-wrapper extra-top">Checkout</a>
+                    <a class="col s12 waves-effect waves-light btn-large valign-wrapper extra-top">Go to checkout</a>
                 </div>
             </div>
 
