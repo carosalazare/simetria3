@@ -17,6 +17,9 @@ import { CartItemComponent } from './Components/cart-item/cart-item.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ArtistaPageComponent } from './artistapage/artistapage.component';
+import { ArtistaProductosComponent } from './artistaproductos/artistaproductos.component';
+import { ProductoartComponent } from './Component/productoart/productoart.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { HttpClientModule } from '@angular/common/http';
     CartComponent,
     CartItemComponent,
     ProductComponent,
-    ProductListComponent
+    ProductListComponent,
+       ArtistaPageComponent,
+    ArtistaProductosComponent,
+    ProductoartComponent
   ],
   imports: [
     BrowserModule,
