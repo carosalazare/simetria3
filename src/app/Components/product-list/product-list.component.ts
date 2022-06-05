@@ -9,19 +9,19 @@ import { ProductsService } from '../../Services/products.service';
 export class ProductListComponent implements OnInit {
 
   public productList : any;
-  searchKey:string=""
+  searchKey:string="";
 
   constructor(public productService: ProductsService) { }
 
   ngOnInit(): void {
-    //console.log(this.productService.getProducts());
     this.getProducts();
   }
-
+  
   getProducts(){
     this.productService.getProducts().subscribe(
       res => {
         this.productService.products = res;
+        console.log(res);
       },
 
       err =>{
@@ -29,7 +29,6 @@ export class ProductListComponent implements OnInit {
       }
     )
   }
-
 
 
 }

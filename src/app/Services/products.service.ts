@@ -9,6 +9,7 @@ export class ProductsService {
   API_URL="http://localhost:3000/api/productos";
   products: Producto[] = [];
   cart_items: Producto[] = [];
+  saved: any;
 
   constructor(private http:HttpClient) {
     this.cart_items=[];
@@ -16,6 +17,10 @@ export class ProductsService {
 
   getProducts(){
     return this.http.get<Producto[]>(this.API_URL);
+  }
+
+  getProductFromId(id:any) {
+    return this.getProducts().subscribe(products => this.products = products);
   }
 
   getCart() {
@@ -28,18 +33,18 @@ export class ProductsService {
     if(localStorage.getItem('cart')==null) {
       this.cart_items?.push(item);
       localStorage.setItem('cart', JSON.stringify(this.cart_items));
-    } else if(this.isDuplicated(item.id)) {
+    } else {
       this.cart_items = JSON.parse(localStorage.getItem('cart') ||'{}');
-      this.cart_items[this.isDuplicatedId(item.id)].cart_qty++;
-      localStorage.setItem('cart', JSON.stringify(this.cart_items));
-    } 
-    else {
-      this.cart_items?.push(item);
-      localStorage.setItem('cart', JSON.stringify(this.cart_items));
+      if(this.isDuplicated(item.id)) {
+        this.cart_items = JSON.parse(localStorage.getItem('cart') ||'{}');
+        this.cart_items[this.isDuplicatedId(item.id)].cart_qty++;
+        localStorage.setItem('cart', JSON.stringify(this.cart_items));
+      } else {
+          this.cart_items = JSON.parse(localStorage.getItem('cart') ||'{}');
+          this.cart_items?.push(item);
+          localStorage.setItem('cart', JSON.stringify(this.cart_items));
+      }
     }
-
-
-    console.log(this.cart_items);
   }
 
   isDuplicated(id:any) {

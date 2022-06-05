@@ -17,6 +17,7 @@ import { CartItemComponent } from './Components/cart-item/cart-item.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductPageTemplateComponent } from './Components/product-page-template/product-page-template.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     CartComponent,
     CartItemComponent,
     ProductComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductPageTemplateComponent
   ],
   imports: [
     BrowserModule,
