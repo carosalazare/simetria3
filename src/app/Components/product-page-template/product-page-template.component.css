@@ -84,7 +84,7 @@
 
 /* Textos */
 div {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serf !important;
     color: #3E3F42;
 }
 
