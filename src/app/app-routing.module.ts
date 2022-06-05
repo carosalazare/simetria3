@@ -21,12 +21,8 @@ const routes: Routes = [
 {path: 'product', component: ProductComponent},
 {path: 'product-list', component: ProductListComponent},
 {path: 'artistapage', component: ArtistaPageComponent},
-<<<<<<< HEAD
-{path: 'productoart', component: ProductoartComponent}
-=======
 {path: 'productoart', component: ProductoartComponent},
 {path: 'underconstruction', component: ConstructionComponent}
->>>>>>> e7b6eba62988da5ec2151b566699306d94998981
 ];
 
 @NgModule({
