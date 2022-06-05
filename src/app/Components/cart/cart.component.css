@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+.card {
+    padding: 30px;
+}
+
 .col {
     padding: 0;
 }
