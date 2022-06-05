@@ -19,7 +19,7 @@ const routes: Routes = [
 {path: 'cart', component: CartComponent},
 {path: 'product', component: ProductComponent},
 {path: 'product-list', component: ProductListComponent},
-  {path: 'artistapage', component: ArtistaPageComponent},
+{path: 'artistapage', component: ArtistaPageComponent},
 {path: 'productoart', component: ProductoartComponent}
 ];
 
