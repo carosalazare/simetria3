@@ -1,5 +1,6 @@
 <div class="col m3" id="top">
-    <a (click)="addToCart()">
+    <!--<a (click)="addToCart()">--> <!--Agregar directo-->
+    <a href="/product-page/{{data.nombre}}?id={{data.id}}">
       <div class="card hoverable">
         <div class="card-image">
           <img src="../../../assets/productos/{{data.img}}">

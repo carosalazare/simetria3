@@ -16,10 +16,13 @@ import { CartComponent } from './Components/cart/cart.component';
 import { CartItemComponent } from './Components/cart-item/cart-item.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
-import { HttpClientModule } from '@angular/common/http';
+import { ProductPageTemplateComponent } from './Components/product-page-template/product-page-template.component';
 import { ArtistaPageComponent } from './artistapage/artistapage.component';
 import { ArtistaProductosComponent } from './artistaproductos/artistaproductos.component';
 import { ProductoartComponent } from './Component/productoart/productoart.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -36,7 +39,8 @@ import { ProductoartComponent } from './Component/productoart/productoart.compon
     CartItemComponent,
     ProductComponent,
     ProductListComponent,
-       ArtistaPageComponent,
+    ProductPageTemplateComponent,
+    ArtistaPageComponent,
     ArtistaProductosComponent,
     ProductoartComponent
   ],

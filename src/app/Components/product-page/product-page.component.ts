@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ɵɵsetComponentScope } from '@angular/core';
+import {ActivatedRoute, Params} from '@angular/router';
+import { Producto } from 'src/app/Model/product';
+import { ProductsService } from '../../Services/products.service';
 
 @Component({
   selector: 'app-product-page',
@@ -6,19 +9,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-page.component.css']
 })
 export class ProductPageComponent implements OnInit {
+  public id : any;
+  
+  constructor(public productService: ProductsService, private route: ActivatedRoute) { }
 
-  constructor() { }
+  ngOnInit() {
+    this.getProducts();
 
-  ngOnInit(): void {
+    // subscribe to router event
+    this.route.queryParams.subscribe((params: Params) => {      
+      this.id= params['id'];
+    });
+
   }
 
-  ngAfterViewInit() {
-    document.addEventListener('DOMContentLoaded', function() {
-      var el = document.querySelectorAll('.tabs');
-      var instance = M.Tabs.init(el, {
-        swipeable: true,
-      });
-    });
-  }  
+  getProducts(){
+    this.productService.getProducts().subscribe(
+      res => {
+        this.productService.products = res;
+      },
 
+      err =>{
+        console.log(err);
+      }
+    )
+  }
+
+  isChosen(item:Producto): boolean {
+    if(item.id==this.id) return true; else return false;
+  }
 }
