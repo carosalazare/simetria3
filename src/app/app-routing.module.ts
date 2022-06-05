@@ -7,6 +7,8 @@ import { ProductPageComponent } from './Components/product-page/product-page.com
 import { CartComponent } from './Components/cart/cart.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
+import { ArtistaPageComponent } from './artistapage/artistapage.component';
+import { ProductoartComponent } from './Component/productoart/productoart.component';
 
 const routes: Routes = [
 {path: '', component: HomePageComponent},
@@ -16,7 +18,9 @@ const routes: Routes = [
 {path: 'product-page/:nombre:id', component: ProductPageComponent},
 {path: 'cart', component: CartComponent},
 {path: 'product', component: ProductComponent},
-{path: 'product-list', component: ProductListComponent}
+{path: 'product-list', component: ProductListComponent},
+  {path: 'artistapage', component: ArtistaPageComponent},
+{path: 'productoart', component: ProductoartComponent}
 ];
 
 @NgModule({
