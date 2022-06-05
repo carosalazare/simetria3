@@ -7,8 +7,8 @@ import { ProductPageComponent } from './Components/product-page/product-page.com
 import { CartComponent } from './Components/cart/cart.component';
 import { ProductComponent } from './Components/product/product.component';
 import { ProductListComponent } from './Components/product-list/product-list.component';
-import { ArtistaPageComponent } from './artistapage/artistapage.component';
-import { ProductoartComponent } from './Component/productoart/productoart.component';
+import { ArtistaPageComponent } from './Components/artistapage/artistapage.component';
+import { ProductoartComponent } from './Components/Component/productoart/productoart.component';
 
 const routes: Routes = [
 {path: '', component: HomePageComponent},

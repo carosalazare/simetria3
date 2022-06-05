@@ -12,4 +12,7 @@ export class ProductoartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addToCart() {
+  }
+
 }
