@@ -1,0 +1,14 @@
+.textoart
+{
+    font-family: 'Roboto', sans-serif; font-weight: 500; color: #3E3F42;text-align: center;
+}
+
+#logo
+{
+    margin: 0 auto;
+}
+#pfp
+{
+    height: 180px;
+    border-radius: 200px;
+}
